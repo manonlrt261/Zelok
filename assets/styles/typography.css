@@ -1,0 +1,67 @@
+/* ================================
+   TYPOGRAPHY — DESKTOP
+================================ */
+
+/* Titres H1 */
+h1,
+.h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 56px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+/* Titres H2 */
+h2,
+.h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+/* Sous-titres H3 */
+h3,
+.h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+/* Corps de texte */
+body,
+.body-text {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+/* Légendes */
+.caption {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+/* Navigation */
+.nav-text {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+}
