@@ -65,3 +65,50 @@ body,
     line-height: 1;
     letter-spacing: 0;
 }
+
+/* ================================
+   TYPOGRAPHY — MOBILE
+================================ */
+
+@media (max-width: 767px) {
+
+    /* Titres H1 */
+    h1,
+    .h1 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    /* Titres H2 */
+    h2,
+    .h2 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    /* Sous-titres H3 */
+    h3,
+    .h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /* Corps de texte */
+    body,
+    .body-text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    /* Légendes */
+    .caption {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    /* Navigation */
+    .nav-text {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
