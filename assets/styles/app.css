@@ -9,10 +9,12 @@
 @import "./components/icons.css";
 
 @import "./layout/header.css";
+@import "./layout/footer.css";
 
+@import "./pages/home.css";
 
 /* ================================
-   RESET / BASE
+   BASE
 ================================ */
 
 * {
