@@ -437,3 +437,298 @@
         margin-right: 20px;
     }
 }
+
+/* ================================
+   MON PARCOURS
+================================ */
+
+.journey {
+    width: 100%;
+    min-height: 690px;
+
+    background-color: var(--color-primary);
+}
+
+.journey__content {
+    width: 100%;
+    max-width: 1728px;
+    min-height: 690px;
+
+    margin: 0 auto;
+    padding: 75px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: clamp(60px, 10vw, 180px);
+}
+
+
+/* ================================
+   PARTIE GAUCHE
+================================ */
+
+.journey__left {
+    flex: 1;
+    min-width: 0;
+}
+
+.journey__heading {
+    color: var(--color-secondary);
+}
+
+.journey__heading h2 {
+    margin-top: 20px;
+}
+
+
+/* ================================
+   TIMELINE
+================================ */
+
+.journey__timeline {
+    position: relative;
+
+    width: 100%;
+    max-width: 760px;
+
+    margin-top: 55px;
+}
+
+
+/* ================================
+   LIGNE
+================================ */
+
+.journey__line {
+    position: absolute;
+    z-index: 0;
+
+    top: 20px;
+    left: 50px;
+
+    width: 2px;
+
+    height: 320px;
+
+    background-color: var(--color-secondary);
+
+    transform: translateX(-50%);
+}
+
+
+/* ================================
+   ÉTAPES
+================================ */
+
+.journey__step {
+    position: relative;
+
+    width: 100%;
+    height: 72px;
+
+    display: grid;
+    grid-template-columns: 100px 170px minmax(180px, 1fr);
+    align-items: center;
+}
+
+
+/* ================================
+   IMAGES TIMELINE
+================================ */
+
+.journey__icon {
+    position: relative;
+    z-index: 1;
+
+    justify-self: center;
+
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+}
+
+
+/* ================================
+   DATES
+================================ */
+
+.journey__date {
+    margin: 0;
+
+    color: var(--color-secondary);
+
+    white-space: nowrap;
+}
+
+
+/* ================================
+   LÉGENDES
+================================ */
+
+.journey__label {
+    margin: 0;
+
+    color: var(--color-secondary);
+}
+
+
+/* ================================
+   ENCADRÉ 2027
+================================ */
+
+.journey__future {
+    width: 410px;
+    height: 290px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: var(--color-box);
+    color: var(--color-primary);
+
+    border-radius: 32px;
+}
+
+.journey__future-icon {
+    display: block;
+
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 25px;
+
+    object-fit: contain;
+}
+
+.journey__future h2,
+.journey__future h3 {
+    color: var(--color-primary);
+}
+
+.journey__future h2 {
+    margin: 0;
+}
+
+.journey__future h3 {
+    margin-top: 15px;
+}
+
+
+/* ================================
+   RESPONSIVE — TABLETTE
+================================ */
+
+@media (max-width: 1200px) {
+
+    .journey__content {
+        padding: 60px 5%;
+
+        gap: 50px;
+    }
+
+    .journey__step {
+        grid-template-columns: 80px 150px minmax(150px, 1fr);
+    }
+
+    .journey__line {
+        left: 40px;
+    }
+
+    .journey__icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .journey__future {
+        width: min(32vw, 410px);
+        height: auto;
+
+        aspect-ratio: 410 / 290;
+    }
+
+    .journey__future-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* ================================
+   RESPONSIVE — MOBILE
+================================ */
+
+@media (max-width: 767px) {
+
+    .journey {
+        min-height: auto;
+    }
+
+    .journey__content {
+        min-height: auto;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 50px 20px;
+
+        gap: 50px;
+    }
+
+    .journey__timeline {
+        margin-top: 40px;
+    }
+
+    .journey__step {
+        height: 90px;
+
+        grid-template-columns: 65px 110px minmax(0, 1fr);
+
+        column-gap: 10px;
+    }
+
+    .journey__icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .journey__line {
+        top: 22.5px;
+        left: 32.5px;
+
+        /*
+         * Mobile :
+         * 4 × 90px + 45px
+         */
+        height: 405px;
+    }
+
+    .journey__date {
+        white-space: normal;
+    }
+
+    .journey__future {
+        width: 100%;
+        max-width: 410px;
+        height: auto;
+
+        align-self: center;
+
+        aspect-ratio: 410 / 290;
+    }
+
+    .journey__future-icon {
+        width: 75px;
+        height: 75px;
+
+        margin-bottom: 20px;
+    }
+}
