@@ -791,7 +791,6 @@
 
 .skills__cards {
     width: 100%;
-
     margin-top: 55px;
 
     display: grid;
@@ -805,15 +804,13 @@
     width: 100%;
     height: 310px;
 
-    padding: 35px;
+    padding: 25px 35px 30px;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
 
     background-color: var(--color-primary);
-
     border-radius: 28px;
 }
 
@@ -825,10 +822,10 @@
 .skills__icon {
     display: block;
 
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: 200px;
 
-    margin-bottom: 35px;
+    margin: 0 0 5px 0;
 
     object-fit: contain;
 }
@@ -845,11 +842,10 @@
 }
 
 .skills__card p {
-    margin-top: 25px;
+    margin: 15px 0 0;
 
     color: var(--color-secondary);
 }
-
 
 /* ================================
    RESPONSIVE — TABLETTE
