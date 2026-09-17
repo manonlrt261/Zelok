@@ -6,7 +6,7 @@
     width: 100%;
     height: clamp(80px, 6.83vw, 118px);
 
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
 }
 
 .header-desktop__content {
@@ -28,9 +28,9 @@
 }
 
 .header-desktop__title {
-    margin: 0;
+    margin: 20px;
 
-    color: var(--color-secondary);
+    color: var(--color-primary);
 
     white-space: nowrap;
 }
