@@ -7,18 +7,22 @@
     min-height: 634px;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+
+    padding-top: 70px;
 
     background-color: var(--color-primary);
     color: var(--color-secondary);
 }
 
 .hero__content {
+    position: relative;
+
     width: 100%;
+    min-height: 100%;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     padding: 0 7%;
 }
@@ -29,15 +33,23 @@
 ================================ */
 
 .hero__text {
+    flex: 0 0 auto;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    min-width: 0;
 }
 
 .hero__text h1,
 .hero__text h2,
 .hero__text h3 {
     color: var(--color-secondary);
+}
+
+.hero__text h1 {
+    white-space: nowrap;
 }
 
 .hero__text h2 {
@@ -75,10 +87,10 @@
 .hero__pencil {
     display: block;
 
-    width: auto;
-    height: 32px;
+    width: 130px;
+    height: auto;
 
-    margin-left: 100px;
+    margin-left: 65px;
 
     object-fit: contain;
 }
@@ -89,10 +101,16 @@
 ================================ */
 
 .hero__visual {
-    width: 650px;
-    height: 470px;
+    position: absolute;
 
-    flex-shrink: 0;
+    width: 300px;
+    height: 250px;
+
+    left: 80%;
+
+    top: 140px;
+
+    transform: translateX(-50%);
 
     display: flex;
     align-items: center;
@@ -105,40 +123,59 @@
 .hero__computer {
     display: block;
 
-    width: 490px;
-    height: 400px;
+    width: 260px;
+    height: 210px;
 
     object-fit: contain;
 }
 
 
 /* ================================
-   RESPONSIVE
+   RESPONSIVE — TABLETTE
 ================================ */
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
 
     .hero__content {
-        gap: 50px;
+        justify-content: space-between;
+
+        gap: 40px;
         padding: 50px 5%;
     }
 
+    .hero__text {
+        flex: 1;
+    }
+
+    .hero__text h1 {
+        white-space: normal;
+    }
+
     .hero__visual {
-        width: min(45vw, 650px);
+        width: min(32vw, 300px);
         height: auto;
-        aspect-ratio: 650 / 470;
+
+        aspect-ratio: 300 / 250;
+
+        margin-left: 0;
+        margin-top: 50px;
     }
 
     .hero__computer {
-        width: 75%;
-        height: 85%;
+        width: 86%;
+        height: 84%;
     }
 
     .hero__pencil {
-        margin-left: 50px;
+        width: 110px;
+        margin-left: 45px;
     }
 }
 
+
+/* ================================
+   RESPONSIVE — MOBILE
+================================ */
 
 @media (max-width: 767px) {
 
@@ -148,13 +185,18 @@
 
     .hero__content {
         flex-direction: column;
+        align-items: flex-start;
 
-        padding: 50px 25px;
         gap: 50px;
+        padding: 50px 25px;
     }
 
     .hero__text {
         width: 100%;
+    }
+
+    .hero__text h1 {
+        white-space: normal;
     }
 
     .hero__description {
@@ -166,16 +208,24 @@
     }
 
     .hero__pencil {
-        margin-left: 50px;
+        width: 90px;
+        margin-left: 35px;
     }
 
     .hero__visual {
         width: 100%;
-        max-width: 650px;
+        max-width: 300px;
+        height: auto;
+
+        align-self: center;
+
+        aspect-ratio: 300 / 250;
+
+        margin: 0;
     }
 
     .hero__computer {
-        width: 75%;
-        height: 85%;
+        width: 86%;
+        height: 84%;
     }
 }
