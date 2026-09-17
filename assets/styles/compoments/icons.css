@@ -1,0 +1,46 @@
+/* ================================
+   ICONS — DESKTOP
+================================ */
+
+.icon-desktop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 158.6px;
+    height: 42px;
+
+    background-color: var(--color-box);
+    color: var(--color-primary);
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+
+/* ================================
+   ICONS — MOBILE
+================================ */
+
+.icon-mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 133px;
+    height: 45px;
+
+    background-color: var(--color-box);
+    color: var(--color-primary);
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0;
+}
