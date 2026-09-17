@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
 
@@ -10,12 +10,15 @@
         {# Polices #}
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
         <link
             href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
             rel="stylesheet"
         >
 
+        {# CSS principal #}
         {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
         {% endblock %}
 
         {% block javascripts %}
@@ -26,7 +29,10 @@
         {% if frankenphp_hot_reload %}
             <meta name="frankenphp-hot-reload:url" content="{{ frankenphp_hot_reload }}">
             <script src="https://cdn.jsdelivr.net/npm/idiomorph"></script>
-            <script src="https://cdn.jsdelivr.net/npm/frankenphp-hot-reload/+esm" type="module"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/frankenphp-hot-reload/+esm"
+                type="module"
+            ></script>
         {% endif %}
     </head>
 

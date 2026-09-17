@@ -1,0 +1,36 @@
+/* ================================
+   HEADER
+================================ */
+
+.header-desktop {
+    width: 100%;
+    height: clamp(80px, 6.83vw, 118px);
+
+    background-color: var(--color-primary);
+}
+
+.header-desktop__content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.header-desktop__image {
+    display: block;
+
+    height: 100%;
+    width: auto;
+
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.header-desktop__title {
+    margin: 0;
+
+    color: var(--color-secondary);
+
+    white-space: nowrap;
+}
