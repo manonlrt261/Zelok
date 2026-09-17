@@ -942,3 +942,210 @@
         margin-top: 20px;
     }
 }
+
+/* ================================
+   MON PROJET
+================================ */
+
+.project {
+    width: 100%;
+    min-height: 600px;
+
+    background-color: var(--color-primary);
+}
+
+.project__content {
+    width: min(1488px, calc(100% - 80px));
+    min-height: 600px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 760px minmax(0, 1fr);
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+/* ================================
+   VISUEL
+================================ */
+
+.project__visual {
+    width: 500px;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-box);
+
+    border-radius: 36px;
+    overflow: hidden;
+}
+
+.project__image {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 110%;
+    max-height: 115%;
+
+    object-fit: contain;
+
+    transform: translateY(-20px);
+}
+
+
+/* ================================
+   INFORMATIONS
+================================ */
+
+.project__information {
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project__heading h3,
+.project__heading h2 {
+    color: var(--color-secondary);
+}
+
+.project__heading h2 {
+    margin-top: 20px;
+}
+
+.project__description {
+    width: 100%;
+    max-width: 520px;
+
+    margin-top: 30px;
+
+    color: var(--color-secondary);
+}
+
+
+/* ================================
+   TECHNOLOGIES
+================================ */
+
+.project__technologies {
+    width: max-content;
+
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+
+    gap: 14px 12px;
+}
+
+
+/* ================================
+   BOUTON
+================================ */
+
+.project__button {
+
+    margin-top: 35px;
+    margin-left: 157.4px;
+}
+
+/* ================================
+   RESPONSIVE — TABLETTE
+================================ */
+
+@media (max-width: 1400px) {
+
+    .project__content {
+        width: calc(100% - 60px);
+
+        grid-template-columns: minmax(0, 1fr) minmax(500px, 1fr);
+
+        gap: 50px;
+    }
+
+    .project__information {
+        max-width: 500px;
+    }
+}
+
+/* ================================
+   RESPONSIVE — MOBILE
+================================ */
+
+@media (max-width: 767px) {
+
+    .project {
+        min-height: auto;
+    }
+
+    .project__content {
+        width: 100%;
+        min-height: auto;
+
+        padding: 50px 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+    .project__visual {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 760 / 420;
+
+        border-radius: 24px;
+    }
+
+    .project__image {
+        max-width: 70%;
+        max-height: 65%;
+    }
+
+    .project__information {
+        width: 100%;
+        max-width: none;
+    }
+
+    .project__heading h2 {
+        margin-top: 15px;
+    }
+
+    .project__description {
+        margin-top: 25px;
+    }
+
+    .project__technologies {
+        width: max-content;
+
+        margin-top: 30px;
+
+        grid-template-columns: repeat(2, 133px);
+
+        gap: 12px;
+    }
+
+    .project__technologies .icon-desktop {
+        width: 133px;
+        height: 45px;
+    }
+
+    .project__button {
+        align-self: center;
+
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
