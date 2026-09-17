@@ -570,6 +570,20 @@
     margin-top: 15px;
 }
 
+.journey {
+    position: relative;
+}
+
+.journey__caption {
+    position: absolute;
+    left: 7%;
+    top: 610px;
+
+    width: 86%;
+    margin: 0;
+
+    color: var(--color-secondary);
+}
 
 /* ================================
    RESPONSIVE — TABLETTE
@@ -1571,6 +1585,15 @@
         margin-bottom: 20px;
     }
 
+   .journey__caption {
+    position: static;
+
+    width: calc(100% - 40px);
+    margin: -20px 20px 0;
+    padding: 0 0 25px;
+
+    color: var(--color-secondary);
+}
 
     /* ======================================================
        MES COMPÉTENCES
