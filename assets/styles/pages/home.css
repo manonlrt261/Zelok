@@ -229,3 +229,211 @@
         height: 84%;
     }
 }
+
+/* ================================
+   À PROPOS
+================================ */
+
+.about {
+    width: 100%;
+    min-height: 590px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--color-secondary);
+}
+
+.about__content {
+    width: 100%;
+    max-width: 1728px;
+
+    margin: 0 auto;
+    padding: 60px 7%;
+
+    display: grid;
+    grid-template-columns: minmax(0, 760px) minmax(0, 600px);
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: clamp(40px, 7vw, 120px);
+}
+
+
+/* ================================
+   PRÉSENTATION
+================================ */
+
+.about__presentation {
+    width: 100%;
+    min-height: 410px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: clamp(30px, 3.2vw, 55px);
+
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+
+    border-radius: 32px;
+}
+
+.about__presentation h2 {
+    margin-top: 25px;
+}
+
+.about__presentation p {
+    width: 100%;
+    max-width: 650px;
+
+    margin-top: 40px;
+
+    color: var(--color-secondary);
+}
+
+
+/* ================================
+   QUALITÉS
+================================ */
+
+.about__qualities {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.about__card {
+    width: 100%;
+    min-height: 116px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px clamp(20px, 2vw, 35px);
+
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+
+    border-radius: 24px;
+}
+
+.about__icon {
+    width: clamp(50px, 5vw, 80px);
+    height: clamp(50px, 5vw, 80px);
+
+    flex-shrink: 0;
+
+    margin-right: clamp(20px, 2vw, 35px);
+
+    object-fit: contain;
+}
+
+.about__card h3 {
+    color: var(--color-secondary);
+}
+
+.about__card p {
+    margin-top: 10px;
+
+    color: var(--color-secondary);
+}
+
+
+/* ================================
+   À PROPOS — ÉCRANS INTERMÉDIAIRES
+================================ */
+
+@media (max-width: 1200px) {
+
+    .about__content {
+        padding: 50px 5%;
+
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+
+        gap: 40px;
+    }
+
+    .about__presentation {
+        min-height: 350px;
+    }
+
+    .about__presentation p {
+        margin-top: 30px;
+    }
+
+    .about__qualities {
+        gap: 18px;
+    }
+
+    .about__card {
+        min-height: 105px;
+    }
+}
+
+
+/* ================================
+   À PROPOS — MOBILE
+================================ */
+
+@media (max-width: 767px) {
+
+    .about {
+        min-height: auto;
+    }
+
+    .about__content {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .about__presentation {
+        width: 100%;
+        min-height: auto;
+
+        padding: 35px 25px;
+
+        border-radius: 24px;
+    }
+
+    .about__presentation h2 {
+        margin-top: 20px;
+    }
+
+    .about__presentation p {
+        max-width: none;
+        margin-top: 30px;
+    }
+
+    .about__qualities {
+        width: 100%;
+
+        gap: 15px;
+    }
+
+    .about__card {
+        width: 100%;
+        min-height: 100px;
+
+        padding: 20px;
+
+        border-radius: 20px;
+    }
+
+    .about__icon {
+        width: 40px;
+        height: 40px;
+
+        margin-right: 20px;
+    }
+}
