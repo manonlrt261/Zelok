@@ -34,3 +34,16 @@
 
     white-space: nowrap;
 }
+
+
+/* ================================
+   HEADER — MOBILE
+================================ */
+
+@media (max-width: 767px) {
+
+    .header-desktop__title {
+        transform: translateX(-10px);
+    }
+
+}
