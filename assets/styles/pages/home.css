@@ -627,7 +627,6 @@
     margin-top: 35px;
 }
 
-
 /*Image Pourquoi Zelok*/
 .why-zelok__image {
     display: block;
@@ -712,6 +711,21 @@
     align-items: center;
 
     gap: 70px;
+}
+
+/* Boutons Mon CV */
+.cv__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.cv__motivation-button {
+    width: auto;
+    min-width: 250px;
+    padding: 0 20px;
+    white-space: nowrap;
 }
 
 /*Image Mon CV*/
