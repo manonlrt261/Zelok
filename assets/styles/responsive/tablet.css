@@ -1,0 +1,591 @@
+/* ==========================================================
+   RESPONSIVE — DESKTOP RÉDUIT / TABLETTE
+   768px → 1199px
+========================================================== */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /* ======================================================
+       SÉCURITÉ GLOBALE
+    ====================================================== */
+
+    .hero,
+    .about,
+    .journey,
+    .skills,
+    .project,
+    .why-zelok,
+    .cv {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero__content,
+    .about__content,
+    .journey__content,
+    .skills__content,
+    .project__content,
+    .why-zelok__content,
+    .cv__content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* ======================================================
+       HERO
+    ====================================================== */
+
+    .hero {
+        min-height: auto;
+        padding-top: 0;
+    }
+
+    .hero__content {
+        min-height: 580px;
+        padding: 60px 5%;
+    }
+
+    .hero__text {
+        width: 55%;
+        max-width: 55%;
+        min-width: 0;
+        flex: none;
+    }
+
+    .hero__text h1 {
+        width: 100%;
+        white-space: normal;
+    }
+
+    .hero__description {
+        width: 100%;
+        max-width: 440px;
+    }
+
+    .hero__visual {
+        left: auto;
+        right: 5%;
+        top: 145px;
+
+        width: clamp(200px, 27vw, 300px);
+        height: auto;
+        aspect-ratio: 300 / 250;
+
+        transform: none;
+    }
+
+    .hero__computer {
+        width: 87%;
+        height: 84%;
+    }
+
+    .hero__qualities {
+        left: 5%;
+        top: 340px;
+
+        max-width: 50%;
+    }
+
+    .hero__pencil {
+        width: clamp(70px, 10vw, 110px);
+        margin-left: clamp(25px, 5vw, 55px);
+    }
+
+
+    /* ======================================================
+       À PROPOS
+    ====================================================== */
+
+    .about {
+        min-height: auto;
+    }
+
+    .about__content {
+        padding: 50px 5%;
+
+        display: grid;
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 35px;
+    }
+
+    .about__presentation,
+    .about__qualities {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .about__presentation {
+        min-height: 370px;
+    }
+
+    .about__card {
+        min-width: 0;
+    }
+
+
+    /* ======================================================
+       MON PARCOURS
+    ====================================================== */
+
+    .journey {
+        min-height: auto;
+        position: relative;
+    }
+
+    .journey__content {
+        min-height: auto;
+
+        padding: 60px 5% 110px;
+
+        display: grid;
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(250px, 34%);
+
+        align-items: center;
+        gap: 35px;
+    }
+
+    .journey__left {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .journey__timeline {
+        width: 100%;
+        max-width: none;
+    }
+
+    .journey__step {
+        width: 100%;
+
+        grid-template-columns:
+            70px
+            120px
+            minmax(0, 1fr);
+    }
+
+    .journey__line {
+        left: 35px;
+    }
+
+    .journey__date {
+        white-space: normal;
+    }
+
+    .journey__label {
+        min-width: 0;
+    }
+
+    .journey__future {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        aspect-ratio: 410 / 290;
+    }
+
+    .journey__caption {
+        left: 5%;
+        bottom: 35px;
+        top: auto;
+
+        width: 90%;
+    }
+
+
+    /* ======================================================
+       MES COMPÉTENCES
+    ====================================================== */
+
+    .skills {
+        min-height: auto;
+    }
+
+    .skills__content {
+        min-height: auto;
+        padding: 60px 5%;
+    }
+
+    .skills__heading {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 30px;
+    }
+
+    .skills__titles,
+    .skills__intro {
+        min-width: 0;
+    }
+
+    .skills__intro {
+        margin: 15px 0 0;
+    }
+
+    .skills__cards {
+        width: 100%;
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+    .skills__card {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        min-height: 310px;
+
+        padding: 25px;
+    }
+
+    .skills__icon {
+        width: clamp(120px, 16vw, 180px);
+        height: clamp(120px, 16vw, 180px);
+    }
+
+
+    /* ======================================================
+       MON PROJET
+    ====================================================== */
+
+    .project {
+        min-height: auto;
+    }
+
+    .project__content {
+        min-height: auto;
+
+        padding: 60px 5%;
+
+        display: grid;
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        align-items: center;
+
+        gap: clamp(35px, 5vw, 60px);
+    }
+
+    .project__visual {
+        width: 100%;
+        min-width: 0;
+
+        height: auto;
+        aspect-ratio: 500 / 350;
+    }
+
+    .project__image {
+        width: auto;
+        height: auto;
+
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    .project__information {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+    }
+
+    .project__heading,
+    .project__description {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+    }
+
+    .project__technologies {
+        width: 100%;
+        max-width: 100%;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+    .project__technologies .icon-desktop {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project__button {
+        align-self: center;
+
+        margin-left: 0;
+    }
+
+
+    /* ======================================================
+       POURQUOI ZELOK
+    ====================================================== */
+
+    .why-zelok {
+        height: auto;
+        min-height: auto;
+    }
+
+    .why-zelok__content {
+        height: auto;
+
+        padding: 60px 5%;
+
+        display: grid;
+        grid-template-columns:
+            minmax(0, 1fr)
+            1px
+            minmax(0, 1fr);
+
+        column-gap: 40px;
+    }
+
+    .why-zelok__left,
+    .why-zelok__right {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .why-zelok__left p,
+    .why-zelok__right p {
+        width: 100%;
+        max-width: none;
+
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .why-zelok__separator {
+        width: 1px;
+        height: 100%;
+        max-height: 320px;
+
+        align-self: center;
+    }
+
+
+    /* ======================================================
+       MON CV
+    ====================================================== */
+
+    .cv {
+        height: auto;
+        min-height: auto;
+    }
+
+    .cv__content {
+        height: auto;
+        min-height: 310px;
+
+        padding: 50px 5%;
+
+        display: grid;
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 40px;
+    }
+
+    .cv__text,
+    .cv__action {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .cv__top {
+        width: 100%;
+
+        gap: clamp(25px, 4vw, 60px);
+    }
+}
+
+
+/* ==========================================================
+   RESPONSIVE — TABLETTE ÉTROITE
+   768px → 949px
+
+========================================================== */
+
+@media (min-width: 768px) and (max-width: 949px) {
+
+    /* HERO */
+
+    .hero__content {
+        min-height: auto;
+
+        padding: 55px 6%;
+
+        display: grid;
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(200px, 38%);
+
+        align-items: center;
+
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+
+    .hero__text {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero__visual {
+        position: static;
+
+        width: 100%;
+        max-width: 280px;
+
+        justify-self: center;
+
+        transform: none;
+    }
+
+    .hero__qualities {
+        position: static;
+
+        width: max-content;
+        max-width: 100%;
+
+        margin: 0;
+        padding-left: 25px;
+
+        grid-column: 1 / -1;
+
+        transform: none;
+    }
+
+
+    /* À PROPOS */
+
+    .about__content {
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .about__presentation {
+        min-height: auto;
+    }
+
+
+    /* MON PARCOURS */
+
+    .journey__content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        padding-bottom: 60px;
+    }
+
+    .journey__future {
+        width: min(100%, 410px);
+        max-width: 410px;
+
+        margin: 0 auto;
+    }
+
+    .journey__caption {
+        position: static;
+
+        width: 100%;
+
+        margin: 0;
+    }
+
+
+    /* MES COMPÉTENCES */
+
+    .skills__cards {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .skills__card:last-child {
+        grid-column: 1 / -1;
+
+        width: min(100%, 50%);
+
+        justify-self: center;
+    }
+
+
+    /* MON PROJET */
+
+    .project__content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 45px;
+    }
+
+    .project__visual {
+        width: min(100%, 650px);
+
+        margin: 0 auto;
+    }
+
+    .project__information {
+        width: 100%;
+    }
+
+    .project__technologies {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+
+    /* POURQUOI ZELOK */
+
+    .why-zelok__content {
+        display: flex;
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+    .why-zelok__separator {
+        width: 100%;
+        height: 1px;
+        max-height: none;
+    }
+
+    .why-zelok__right {
+        padding-top: 0;
+    }
+
+
+    /* MON CV */
+
+    .cv__content {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 30px;
+    }
+
+    .cv__top {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
