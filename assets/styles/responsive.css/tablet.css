@@ -1,0 +1,264 @@
+/* ==========================================================
+   RESPONSIVE — DESKTOP RÉDUIT / TABLETTE
+   768px → 1199px
+========================================================== */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    /* ================================
+       HERO
+    ================================ */
+
+    .hero {
+        min-height: 580px;
+        padding-top: 0;
+    }
+
+    .hero__content {
+        min-height: 580px;
+        padding: 60px 5%;
+    }
+
+    .hero__text {
+        width: 55%;
+        flex: none;
+    }
+
+    .hero__text h1 {
+        white-space: normal;
+    }
+
+    .hero__description {
+        max-width: 440px;
+    }
+
+    .hero__visual {
+        left: auto;
+        right: 5%;
+        top: 145px;
+
+        width: clamp(220px, 27vw, 300px);
+        height: auto;
+        aspect-ratio: 300 / 250;
+
+        transform: none;
+    }
+
+    .hero__qualities {
+        left: 5%;
+        top: 340px;
+    }
+
+
+    /* ================================
+       À PROPOS
+    ================================ */
+
+    .about__content {
+        padding: 50px 5%;
+
+        grid-template-columns:
+            minmax(0, 1.1fr)
+            minmax(300px, 0.9fr);
+
+        gap: 35px;
+    }
+
+    .about__presentation {
+        min-height: 370px;
+    }
+
+
+    /* ================================
+       MON PARCOURS
+    ================================ */
+
+    .journey {
+        min-height: auto;
+    }
+
+    .journey__content {
+        min-height: 690px;
+
+        padding: 60px 5% 100px;
+
+        gap: 35px;
+    }
+
+    .journey__step {
+        grid-template-columns:
+            70px
+            125px
+            minmax(0, 1fr);
+    }
+
+    .journey__line {
+        left: 35px;
+    }
+
+    .journey__future {
+        width: clamp(250px, 30vw, 340px);
+    }
+
+    .journey__caption {
+        left: 5%;
+        width: 90%;
+    }
+
+
+    /* ================================
+       MES COMPÉTENCES
+    ================================ */
+
+    .skills__content {
+        padding: 60px 5%;
+    }
+
+    .skills__cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .skills__card {
+        min-width: 0;
+        padding: 25px;
+    }
+
+    .skills__heading {
+        gap: 30px;
+    }
+
+    .skills__intro {
+        margin-left: 20px;
+    }
+
+
+    /* ================================
+       MON PROJET
+    ================================ */
+
+    .project {
+        min-height: auto;
+    }
+
+    .project__content {
+        width: 90%;
+        min-height: 600px;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 40px;
+    }
+
+    .project__visual {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 500 / 350;
+    }
+
+    .project__image {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    .project__information {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+    }
+
+    .project__description {
+        max-width: none;
+    }
+
+    .project__technologies {
+        width: 100%;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .project__technologies .icon-desktop {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project__button {
+        align-self: center;
+
+        margin-left: 0;
+    }
+
+
+    /* ================================
+       POURQUOI ZELOK
+    ================================ */
+
+    .why-zelok {
+        height: auto;
+        min-height: 427px;
+    }
+
+    .why-zelok__content {
+        height: auto;
+
+        padding: 60px 5%;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            1px
+            minmax(0, 1fr);
+
+        column-gap: 40px;
+    }
+
+    .why-zelok__left,
+    .why-zelok__right {
+        min-width: 0;
+    }
+
+    .why-zelok__left p,
+    .why-zelok__right p {
+        width: 100%;
+        max-width: none;
+    }
+
+    .why-zelok__separator {
+        height: 100%;
+        max-height: 320px;
+    }
+
+
+    /* ================================
+       MON CV
+    ================================ */
+
+    .cv {
+        height: auto;
+        min-height: 310px;
+    }
+
+    .cv__content {
+        height: auto;
+        min-height: 310px;
+
+        padding: 50px 5%;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap: 40px;
+    }
+
+    .cv__text,
+    .cv__action {
+        min-width: 0;
+    }
+
+    .cv__top {
+        gap: clamp(25px, 4vw, 60px);
+    }
+}
