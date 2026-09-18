@@ -589,3 +589,71 @@
         justify-content: center;
     }
 }
+
+/* ==========================================================
+   MON APPROCHE — TABLETTE
+========================================================== */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .approach__content {
+        padding: 28px 40px 50px;
+    }
+
+    .approach__separator {
+        width: 100%;
+        max-width: 1045px;
+    }
+
+    .approach__title {
+        margin: 40px 0;
+    }
+
+    .approach__layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    .approach__visual {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .approach__main-image {
+        width: 100%;
+        max-width: 575px;
+        height: auto;
+    }
+
+    .approach__categories {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 45px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 40px;
+    }
+
+    .approach__category {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .approach__text {
+        width: 100%;
+        margin-top: 55px;
+    }
+
+    .approach__closing {
+        width: 100%;
+        margin-top: 70px;
+        color: var(--color-secondary) !important;
+    }
+}

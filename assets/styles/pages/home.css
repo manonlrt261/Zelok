@@ -732,591 +732,116 @@
 }
 
 /* ==========================================================
-   RESPONSIVE GLOBAL — MOBILE
-   Frame Figma : 393 px
+   MON APPROCHE
 ========================================================== */
 
-@media (max-width: 767px) {
-
-    /* ======================================================
-       HERO
-    ====================================================== */
-
-    .hero {
-        width: 100%;
-        min-height: auto;
-        padding: 0;
-
-        background-color: var(--color-primary);
-        color: var(--color-secondary);
-
-        overflow: hidden;
-    }
-
-    .hero__content {
-        position: relative;
-
-        width: 100%;
-        min-height: auto;
-
-        padding: 50px 25px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        gap: 0;
-    }
-
-    .hero__text {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .hero__text h1 {
-        width: 100%;
-        max-width: none;
-
-        white-space: normal;
-    }
-
-    .hero__text h2 {
-        margin-top: 20px;
-    }
-
-    .hero__description {
-        width: 100%;
-        max-width: none;
-
-        margin-top: 25px;
-    }
-
-    /* ENCADRÉ */
-
-    .hero__visual {
-        position: static;
-
-        width: 170px;
-        height: 130px;
-
-        margin: 30px auto 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        align-self: center;
-
-        transform: none;
-        aspect-ratio: auto;
-
-        background-color: var(--color-box);
-        border-radius: 24px;
-    }
-
-    .hero__computer {
-        display: block;
-
-        width: 135px;
-        height: 105px;
-
-        object-fit: contain;
-
-        transform: none;
-    }
-
-    /* QUALITÉS */
-
-    .hero__qualities {
-        position: static;
-
-        width: auto;
-
-        margin-top: 30px;
-        padding-left: 20px;
-
-        display: flex;
-        align-items: center;
-
-        transform: none;
-
-        border-left: 3px solid var(--color-secondary);
-    }
-
-    .hero__qualities-text {
-        display: flex;
-        flex-direction: column;
-
-        gap: 22px;
-    }
-
-    .hero__pencil {
-        display: block;
-
-        width: 65px;
-        height: auto;
-
-        margin-left: 30px;
-
-        object-fit: contain;
-
-        transform: none;
-    }
-
-
-    /* ======================================================
-       À PROPOS
-    ====================================================== */
-
-    .about {
-        width: 100%;
-        min-height: auto;
-    }
-
-    .about__content {
-        width: 100%;
-
-        padding: 40px 20px;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 20px;
-    }
-
-    .about__presentation {
-        width: 100%;
-        min-height: auto;
-
-        padding: 35px 25px;
-
-        border-radius: 24px;
-    }
-
-    .about__presentation h2 {
-        margin-top: 15px;
-    }
-
-    .about__presentation p {
-        width: 100%;
-        max-width: none;
-
-        margin-top: 25px;
-    }
-
-    .about__qualities {
-        width: 100%;
-
-        gap: 15px;
-    }
-
-    .about__card {
-        width: 100%;
-        min-height: 100px;
-
-        padding: 20px;
-
-        border-radius: 20px;
-    }
-
-    .about__icon {
-        width: 45px;
-        height: 45px;
-
-        margin-right: 20px;
-    }
-
-    .about__card p {
-        margin-top: 8px;
-    }
-
-
-    /* ======================================================
-       MON PARCOURS
-    ====================================================== */
-
-    .journey {
-        width: 100%;
-        min-height: auto;
-    }
-
-    .journey__content {
-        width: 100%;
-        min-height: auto;
-
-        padding: 50px 20px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-
-        gap: 45px;
-    }
-
-    .journey__left {
-        width: 100%;
-    }
-
-    .journey__heading h2 {
-        margin-top: 15px;
-    }
-
-    .journey__timeline {
-        position: relative;
-
-        width: 100%;
-        max-width: none;
-
-        margin-top: 40px;
-    }
-
-    .journey__step {
-        width: 100%;
-        height: 90px;
-
-        display: grid;
-        grid-template-columns: 55px 90px minmax(0, 1fr);
-
-        column-gap: 10px;
-    }
-
-    .journey__line {
-        top: 45px;
-        bottom: 45px;
-        left: 27.5px;
-
-        width: 2px;
-        height: auto;
-
-        transform: none;
-    }
-
-    .journey__icon {
-        width: 42px;
-        height: 42px;
-    }
-
-    .journey__date {
-        white-space: normal;
-    }
-
-    .journey__label {
-        min-width: 0;
-    }
-
-    .journey__future {
-        width: 100%;
-        max-width: none;
-        height: 250px;
-
-        aspect-ratio: auto;
-
-        border-radius: 24px;
-    }
-
-    .journey__future-icon {
-        width: 75px;
-        height: 75px;
-
-        margin-bottom: 20px;
-    }
-
-   .journey__caption {
-    position: static;
-
-    width: calc(100% - 40px);
-    margin: -20px 20px 0;
-    padding: 0 0 25px;
-
+.approach {
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+.approach__content {
+    width: 100%;
+    max-width: 1728px;
+    margin: 0 auto;
+    padding: 28px 55px 52px;
+}
+
+.approach__separator {
+    width: 1045px;
+    max-width: 100%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: var(--color-secondary);
+}
+
+.approach__title {
+    margin: 42px 0 42px;
+    text-align: center;
     color: var(--color-secondary);
 }
 
-    /* ======================================================
-       MES COMPÉTENCES
-    ====================================================== */
-
-    .skills {
-        width: 100%;
-        min-height: auto;
-    }
-
-    .skills__content {
-        width: 100%;
-        min-height: auto;
-
-        padding: 50px 20px;
-    }
-
-    .skills__heading {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 25px;
-    }
-
-    .skills__titles h2 {
-        margin-top: 15px;
-    }
-
-    .skills__intro {
-        margin: 0;
-    }
-
-    .skills__cards {
-        width: 100%;
-
-        margin-top: 35px;
-
-        display: grid;
-        grid-template-columns: 1fr;
-
-        gap: 20px;
-    }
-
-    .skills__card {
-        width: 100%;
-        height: auto;
-        min-height: 260px;
-
-        padding: 25px;
-
-        border-radius: 24px;
-    }
-
-    .skills__icon {
-        width: 130px;
-        height: 130px;
-
-        margin: 0;
-    }
-
-    .skills__card h3 {
-        margin: 0;
-    }
-
-    .skills__card p {
-        margin-top: 15px;
-    }
-
-
-    /* ======================================================
-       MON PROJET
-    ====================================================== */
-
-    .project {
-        width: 100%;
-        min-height: auto;
-    }
-
-    .project__content {
-        width: 100%;
-        min-height: auto;
-
-        padding: 50px 20px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-
-        gap: 40px;
-    }
-
-    .project__visual {
-        width: 100%;
-        height: 240px;
-
-        aspect-ratio: auto;
-
-        border-radius: 24px;
-    }
-
-    .project__image {
-        width: auto;
-        height: auto;
-
-        max-width: 95%;
-        max-height: 95%;
-
-        transform: translateY(-10px);
-    }
-
-    .project__information {
-        width: 100%;
-        max-width: none;
-    }
-
-    .project__heading h2 {
-        margin-top: 15px;
-    }
-
-    .project__description {
-        width: 100%;
-        max-width: none;
-
-        margin-top: 25px;
-    }
-
-    .project__technologies {
-        width: 100%;
-
-        margin-top: 30px;
-
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 12px;
-    }
-
-    .project__technologies .icon-desktop {
-        width: 100%;
-        height: 45px;
-    }
-
-    .project__button {
-        align-self: center;
-
-        margin-top: 30px;
-        margin-left: 0;
-    }
-
-
-    /* ======================================================
-       POURQUOI ZELOK
-    ====================================================== */
-
-    .why-zelok {
-        width: 100%;
-        height: auto;
-        min-height: auto;
-    }
-
-    .why-zelok__content {
-        width: 100%;
-        height: auto;
-
-        padding: 50px 25px;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 35px;
-    }
-
-    .why-zelok__left {
-        width: 100%;
-    }
-
-    .why-zelok__left h2 {
-        margin-top: 15px;
-    }
-
-    .why-zelok__left p {
-        width: 100%;
-        max-width: none;
-
-        margin-top: 25px;
-    }
-
-    .why-zelok__image {
-        width: 65px;
-        height: 65px;
-
-        margin-top: 30px;
-    }
-
-    .why-zelok__separator {
-        width: 100%;
-        height: 1px;
-
-        align-self: auto;
-
-        background-color: var(--color-primary);
-    }
-
-    .why-zelok__right {
-        width: 100%;
-
-        padding-top: 0;
-    }
-
-    .why-zelok__right p {
-        width: 100%;
-        max-width: none;
-    }
-
-
-    /* ======================================================
-       MON CV
-    ====================================================== */
-
-    .cv {
-        width: 100%;
-        height: auto;
-        min-height: auto;
-    }
-
-    .cv__content {
-        width: 100%;
-        height: auto;
-
-        padding: 50px 25px;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 35px;
-    }
-
-    .cv__text {
-        width: 100%;
-    }
-
-    .cv__text h2 {
-        margin-top: 15px;
-    }
-
-    .cv__text p {
-        margin-top: 20px;
-    }
-
-    .cv__text p br {
-        display: none;
-    }
-
-    .cv__action {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cv__top {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        gap: 20px;
-    }
-
-    .cv__image {
-        width: 120px;
-        height: 120px;
-    }
-
-    .cv__caption {
-        width: 100%;
-
-        margin-top: 20px;
-
-        text-align: center;
-    }
-
+.approach__layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 575px 170px minmax(0, 1fr);
+    align-items: start;
+    column-gap: 30px;
+}
+
+/*Grande image Mon approche */
+
+.approach__visual {
+    width: 100%;
+}
+
+.approach__main-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+/*Pictogrammes Mon approche */
+
+.approach__categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+.approach__category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.approach__icon-box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(85, 124, 112, 0.5);
+    border-radius: 4px;
+}
+
+.approach__icon {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.approach__category h3 {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+/*Texte Mon approche */
+
+.approach__text {
+    width: 100%;
+    min-width: 0;
+    color: var(--color-secondary);
+}
+
+.approach__text p {
+    margin: 0 0 13px;
+    color: var(--color-secondary);
+}
+
+.approach__text p:last-child {
+    margin-bottom: 0;
+}
+
+.approach__closing {
+    width: 100%;
+    margin: 80px 0 0;
+    color: var(--color-secondary) !important;
+    text-align: center;
 }
